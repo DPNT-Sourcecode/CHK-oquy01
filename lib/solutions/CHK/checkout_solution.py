@@ -44,13 +44,14 @@ def checkout(skus):
         discount = (counter['A'] // 3) * 20
         total -= discount
     if counter['B'] // 2 > 0:
-        discount = (counter['B'] // 2) * 15
-        total -= discount
+        discount2 = (counter['B'] // 2) * 15
+        total -= discount2
     
     return total
 
 if __name__ == "__main__":
     main()
+
 
 
 
