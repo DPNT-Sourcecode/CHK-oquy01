@@ -1,5 +1,5 @@
 
-
+from collections import Counter
 # noinspection PyUnusedLocal
 # skus = unicode string
 
@@ -9,6 +9,8 @@
 | C    | 20    |                |
 | D    | 15  
 '''
+def main():
+    checkout('abcd')
 
 def checkout(skus):
     #create array for prices
@@ -23,7 +25,11 @@ def checkout(skus):
     'd':15}
 
     cleanedSkus = skus.lower().trim()
+    counter = Counter(skus)
 
+
+if __name__ == "__main__":
+    main()
 
 
 
