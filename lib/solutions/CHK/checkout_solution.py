@@ -73,9 +73,11 @@ def checkout(skus):
     return total
 
 
-def totalValueOfBs()
+def totalValueOfBs(numBs):
+    numBs
 
 if __name__ == "__main__":
     main()
+
 
 

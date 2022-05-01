@@ -48,6 +48,10 @@ class TestSolution(unittest.TestCase):
 
         self.assertEqual(checkout(sku8), -1)
         self.assertEqual(checkout(sku9), 165)
+    
+    def test_totalValueOfBs(self):
+        self.assertEqual(totalValueOfBs(2), 45)
+        self.assertEqual(totalValueOfBs(3), 75)
 
 
 if __name__ == '__main__':
