@@ -157,8 +157,12 @@ class TestSolution(unittest.TestCase):
     def test_updateCounterDict(self):
         dict1={'E':2, 'B':1}
         dict2={'E':2, 'B':0}
+        dict3={'F':6, 'B':1}
+        dict4={'F':4, 'B':1}
         self.assertEqual(updateCounterDict(dict1), dict2)
+        self.assertEqual(updateCounterDict(dict3), dict4)
     
 
 if __name__ == '__main__':
     unittest.main()
+

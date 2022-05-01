@@ -117,7 +117,7 @@ def updateCounterDict(counterDict):
         if key == 'E':
             counterDict['B'] -= counterDict['E'] // 2
         if key == 'F':
-        if key == 'K':
+            counterDict['F'] -= counterDict['F'] // 3
         if key == 'N':
         if key == 'R':
         if key == 'U':
@@ -160,5 +160,6 @@ round4
 
 if __name__ == "__main__":
     main()
+
 
 
