@@ -4,10 +4,15 @@ from collections import Counter
 # skus = unicode string
 
 '''+------+-------+----------------+
-| A    | 50    | 3A for 130     |
-| B    | 30    | 2B for 45      |
-| C    | 20    |                |
-| D    | 15  
++------+-------+------------------------+
+| Item | Price | Special offers         |
++------+-------+------------------------+
+| A    | 50    | 3A for 130, 5A for 200 |
+| B    | 30    | 2B for 45              |
+| C    | 20    |                        |
+| D    | 15    |                        |
+| E    | 40    | 2E get one B free      |
++------+-------+------------------------+
 '''
 def main():
     checkout('abcd')
@@ -23,7 +28,9 @@ def checkout(skus):
     prices = {'A':50,
     'B':30,
     'C':20,
-    'D':15}
+    'D':15,
+    'E':40}
+    
     if skus == "":
         return total
     if not skus.isalpha():
@@ -51,3 +58,4 @@ def checkout(skus):
 
 if __name__ == "__main__":
     main()
+
