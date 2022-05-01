@@ -26,6 +26,39 @@ class TestSolution(unittest.TestCase):
     #     self.assertEqual(checkout(sku9), 90)
     
     #Round 2
+    # def test_checkout(self):
+    #     sku1 = '''ABCD'''
+    #     sku2 = '''ABCD2'''
+    #     sku3 = ''''''
+    #     sku4 = '''AABABD'''
+    #     sku5 = '''ZMJSD'''
+    #     sku6 = '''AAAAAA'''
+    #     sku7 = '''AAAEE'''
+    #     sku8 = '''a'''
+    #     sku9 = '''AAAAAAAAAAAAA'''
+    #     sku10 = '''EEEBB'''
+    #     sku11 ='''EEB'''
+    #     sku12 ='''EEEB'''
+    #     sku13 = '''EEEEBB'''
+    #     sku14 = '''EEEEEEEEBBBB'''
+
+    #     self.assertEqual(checkout(sku1), 115)
+    #     self.assertEqual(checkout(sku2), -1)
+    #     self.assertEqual(checkout(sku3), 0)
+    #     self.assertEqual(checkout(sku4), 190)
+    #     self.assertEqual(checkout(sku5), -1)
+    #     self.assertEqual(checkout(sku6), 250)
+    #     self.assertEqual(checkout(sku7), 210)
+
+    #     self.assertEqual(checkout(sku8), -1)
+    #     self.assertEqual(checkout(sku9), 530)
+    #     self.assertEqual(checkout(sku10), 150)
+    #     self.assertEqual(checkout(sku11), 80)
+    #     self.assertEqual(checkout(sku12), 120)
+    #     self.assertEqual(checkout(sku13), 160)
+    #     self.assertEqual(checkout(sku14), 320)
+
+    #round 3
     def test_checkout(self):
         sku1 = '''ABCD'''
         sku2 = '''ABCD2'''
@@ -70,8 +103,11 @@ class TestSolution(unittest.TestCase):
         self.assertEqual(totalValueOfAs(13), 530)
 
     def test_totalValueOfFs(self):
-        self.assertEqual(totalValueOfAs(2), 100)
+        self.assertEqual(totalValueOfFs(5), 40)
+        self.assertEqual(totalValueOfFs(2), 20)
+        self.assertEqual(totalValueOfFs(6), 40)
     
 
 if __name__ == '__main__':
     unittest.main()
+

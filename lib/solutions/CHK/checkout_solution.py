@@ -93,7 +93,12 @@ def totalValueOfBs(numBs):
     remainder = numBs % 2
     return (bundles * 45) + (remainder * 30)
 
+def totalValueOfFs(numFs):
+    bundles = numFs // 3
+    remainder = numFs % 3
+    return (bundles * 20) + (remainder * 10)
 
 if __name__ == "__main__":
     main()
+
 
