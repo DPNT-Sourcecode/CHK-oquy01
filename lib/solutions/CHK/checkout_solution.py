@@ -48,12 +48,20 @@ def checkout(skus):
     counter = Counter(skus)
 
     for letter in skus:
+        if letter == 'A':
+            continue
+        if letter == 'B':
+            continue
         if letter in prices:
             total += prices[letter]
         else:
             return -1
     
     #Special offers
+
+    total += totalValueOfAs(counter['A'])
+    numOfFreeBs = counter['E'] // 2
+    total += totalValueOfAs(counter['A'])
     if counter['A'] // 3 > 0:
         fives = counter['A'] // 5
         remfives = counter['A'] % 5
@@ -88,6 +96,7 @@ def totalValueOfBs(numBs):
 
 if __name__ == "__main__":
     main()
+
 
 
 

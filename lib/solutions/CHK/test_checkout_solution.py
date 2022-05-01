@@ -40,7 +40,7 @@ class TestSolution(unittest.TestCase):
         sku11 ='''EEB'''
         sku12 ='''EEEB'''
         sku13 = '''EEEEBB'''
-        
+
         self.assertEqual(checkout(sku1), 115)
         self.assertEqual(checkout(sku2), -1)
         self.assertEqual(checkout(sku3), 0)
@@ -63,10 +63,12 @@ class TestSolution(unittest.TestCase):
         self.assertEqual(totalValueOfAs(3), 130)
         self.assertEqual(totalValueOfAs(5), 200)
         self.assertEqual(totalValueOfAs(13), 530)
+    
 
 
 if __name__ == '__main__':
     unittest.main()
+
 
 
 
