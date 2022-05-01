@@ -12,12 +12,14 @@ class TestSolution(unittest.TestCase):
         sku5 = '''zmjsd'''
         sku6 = '''aababdaaaaaac'''
         sku7 = '''AA'''
+        sku8 = '''a'''
         self.assertEqual(checkout(sku1), 115)
         self.assertEqual(checkout(sku2), -1)
         self.assertEqual(checkout(sku3), -1)
         self.assertEqual(checkout(sku4), 190)
         self.assertEqual(checkout(sku5), -1)
         self.assertEqual(checkout(sku6), 470)
+        self.assertEqual(checkout(sku7), 100)
         self.assertEqual(checkout(sku7), 100)
 
 

@@ -28,10 +28,11 @@ def checkout(skus):
     if not skus.isalpha():
         return -1
 
-    cleanedSkus = skus.lower().strip()
+    # cleanedSkus = skus.lower().strip()
+    
     counter = Counter(skus)
 
-    for letter in cleanedSkus:
+    for letter in skus:
         if letter in prices:
             total += prices[letter]
         else:
@@ -49,6 +50,7 @@ def checkout(skus):
 
 if __name__ == "__main__":
     main()
+
 
 
 
