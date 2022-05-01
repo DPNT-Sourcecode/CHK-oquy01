@@ -121,27 +121,31 @@ round4
             remTens = newCounter[key] % 10
             fives = remTens // 5
             remainder = remTens % 5
-            return (tens * 80) + (fives * 45) + (remainder * prices[key])
+            total += (tens * 80) + (fives * 45) + (remainder * prices[key])
         elif key == 'K':
             #2K for 150
             bundles =  newCounter[key] // 2
             remainder = newCounter[key] % 2
-            return (bundles * 150) + (remainder * prices[key])
+            total += (bundles * 150) + (remainder * prices[key])
         elif key == 'P':
             #5P for 200 
             bundles =  newCounter[key] // 5
             remainder = newCounter[key] % 5
-            return (bundles * 200) + (remainder * prices[key])
+            total += (bundles * 200) + (remainder * prices[key])
         elif key == 'Q':
-            #5P for 200 
-            bundles =  newCounter[key] // 5
-            remainder = newCounter[key] % 5
-            return (bundles * 200) + (remainder * prices[key])
-
-        
+            #3Q for 80
+            bundles =  newCounter[key] // 3
+            remainder = newCounter[key] % 3
+            total += (bundles * 80) + (remainder * prices[key])
+        elif key == 'V':
+            #2V for 90, 3V for 130 
+            threes = newCounter[key] // 3
+            remThrees = newCounter[key] % 3
+            twos = remThrees // 2
+            remainder = remTens % 2
+            total += (threes * 130) + (twos * 90) + (remainder * prices[key])
         else:
             total += prices[key] + newCounter[key]
-    return counterDict
 
     for letter in skus:
         if letter == 'A':
@@ -199,5 +203,6 @@ def updateCounterDict(counterDict):
 
 if __name__ == "__main__":
     main()
+
 
 
