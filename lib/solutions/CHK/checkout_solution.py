@@ -62,7 +62,21 @@ def checkout(skus):
     'B':30,
     'C':20,
     'D':15,
-    'E':40}
+    'E':40,
+    'F':10,
+    'G':20,
+    'H':10,
+    'I':35,
+    'J':60,
+    'K':80,
+    'L':90,
+    'M':15,
+    'N':40,
+    '0':10,
+    'P':50,
+    'Q':30,
+    'R',50,
+    ''}
 
     if skus == "":
         return total
@@ -145,7 +159,7 @@ round4
             remainder = remTens % 2
             total += (threes * 130) + (twos * 90) + (remainder * prices[key])
         else:
-            total += prices[key] + newCounter[key]
+            total += prices[key] * newCounter[key]
 
     for letter in skus:
         if letter == 'A':
@@ -203,6 +217,7 @@ def updateCounterDict(counterDict):
 
 if __name__ == "__main__":
     main()
+
 
 
 
