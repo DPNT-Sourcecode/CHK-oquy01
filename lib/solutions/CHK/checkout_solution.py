@@ -4,6 +4,7 @@ from collections import Counter
 # skus = unicode string
 
 '''+------+-------+----------------+
+round 2
 +------+-------+------------------------+
 | Item | Price | Special offers         |
 +------+-------+------------------------+
@@ -13,9 +14,24 @@ from collections import Counter
 | D    | 15    |                        |
 | E    | 40    | 2E get one B free      |
 +------+-------+------------------------+
+
+round 3
++------+-------+------------------------+
+| Item | Price | Special offers         |
++------+-------+------------------------+
+| A    | 50    | 3A for 130, 5A for 200 |
+| B    | 30    | 2B for 45              |
+| C    | 20    |                        |
+| D    | 15    |                        |
+| E    | 40    | 2E get one B free      |
+| F    | 10    | 2F get one F free      |
++------+-------+------------------------+
+
 '''
 def main():
     checkout('abcd')
+
+#unittests in test_checkout_solution.py file in same folder
 
 def checkout(skus):
     #create array for prices
@@ -80,3 +96,4 @@ def totalValueOfBs(numBs):
 
 if __name__ == "__main__":
     main()
+

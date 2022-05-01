@@ -68,6 +68,9 @@ class TestSolution(unittest.TestCase):
         self.assertEqual(totalValueOfAs(3), 130)
         self.assertEqual(totalValueOfAs(5), 200)
         self.assertEqual(totalValueOfAs(13), 530)
+
+    def test_totalValueOfFs(self):
+        self.assertEqual(totalValueOfAs(2), 100)
     
 
 if __name__ == '__main__':
