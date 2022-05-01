@@ -50,25 +50,26 @@ def checkout(skus):
         else:
             return -1
     
-    #offers
+    #Special offers
     if counter['A'] // 3 > 0:
         fives = counter['A'] // 5
         remfives = counter['A'] % 5
         threes = remfives // 3
-        discount = 
-        (counter['A'] // 3) * 20
-        total -= discount
+        discountA = (fives * 50) + (threes * 20)
+        total -= discountA
     if counter['E'] // 2 > 0:
-        discount2 = (counter['B'] // 2) * 15
+        numOfEs = counter['E'] // 2
+        counter['B'] += numOfEs
         total -= discount2
     if counter['B'] // 2 > 0:
-        discount2 = (counter['B'] // 2) * 15
+        discountB = (counter['B'] // 2) * 15
         total -= discount2
     
     return total
 
 if __name__ == "__main__":
     main()
+
 
 
 
