@@ -40,8 +40,6 @@ def checkout(skus):
         return total
     if not skus.isalpha():
         return -1
-    
-    # ModifiedSkus = 0
 
     # cleanedSkus = skus.lower().strip()
 
@@ -80,13 +78,5 @@ def totalValueOfBs(numBs):
     return (bundles * 45) + (remainder * 30)
 
 
-
 if __name__ == "__main__":
     main()
-
-
-
-
-
-
-
