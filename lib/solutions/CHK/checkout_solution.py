@@ -45,6 +45,9 @@ def checkout(skus):
     #check that whatever offer is given is the lowest
     #getting a B for free when you buy 2 Es would not affect the total I don't think, because that would be strange
 
+    #Round 4
+    # update the counter dict first, then work off of the counter dict
+
     total = 0
     prices = {'A':50,
     'B':30,
@@ -102,6 +105,7 @@ def totalValueOfFs(numFs):
 
 if __name__ == "__main__":
     main()
+
 
 
 
