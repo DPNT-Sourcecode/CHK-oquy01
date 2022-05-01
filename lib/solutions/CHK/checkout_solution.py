@@ -27,9 +27,8 @@ def checkout(skus):
     cleanedSkus = skus.lower().trim()
     counter = Counter(skus)
 
+    
+
 
 if __name__ == "__main__":
     main()
-
-
-
