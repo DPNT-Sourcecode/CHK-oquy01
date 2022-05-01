@@ -25,7 +25,10 @@ def checkout(skus):
     'c':20,
     'd':15}
 
-    cleanedSkus = skus.lower().trim()
+    if not skus.isalpha():
+        return -1
+
+    cleanedSkus = skus.lower().strip()
     counter = Counter(skus)
 
     for letter in cleanedSkus:
@@ -43,8 +46,6 @@ def checkout(skus):
         total -= discount
     
     return total
-
-
 
 if __name__ == "__main__":
     main()
