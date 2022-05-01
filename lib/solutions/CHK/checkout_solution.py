@@ -52,6 +52,8 @@ def checkout(skus):
     
     #offers
     if counter['A'] // 3 > 0:
+        fives = counter['A'] // 5
+        remfives = 
         discount = (counter['A'] // 3) * 20
         total -= discount
     if counter['B'] // 2 > 0:
@@ -62,5 +64,6 @@ def checkout(skus):
 
 if __name__ == "__main__":
     main()
+
 
 
