@@ -36,8 +36,7 @@ class TestSolution(unittest.TestCase):
         sku7 = '''AAAEE'''
         sku8 = '''a'''
         sku9 = '''AAAAAAAAAAAAA'''
-        sku9 = '''EBAAAAAAAAAAAAA'''
-        sku9 = '''EEEBB'''
+        sku10 = '''EEEBB'''
         self.assertEqual(checkout(sku1), 115)
         self.assertEqual(checkout(sku2), -1)
         self.assertEqual(checkout(sku3), 0)
@@ -47,7 +46,8 @@ class TestSolution(unittest.TestCase):
         self.assertEqual(checkout(sku7), 210)
 
         self.assertEqual(checkout(sku8), -1)
-        self.assertEqual(checkout(sku9), 165)
+        self.assertEqual(checkout(sku9), 530)
+        self.assertEqual(checkout(sku10), 165)
     
     def test_totalValueOfBs(self):
         self.assertEqual(totalValueOfBs(2), 45)
@@ -58,9 +58,10 @@ class TestSolution(unittest.TestCase):
         self.assertEqual(totalValueOfAs(2), 100)
         self.assertEqual(totalValueOfAs(3), 130)
         self.assertEqual(totalValueOfAs(5), 200)
-        self.assertEqual(totalValueOfAs(13), 200)
+        self.assertEqual(totalValueOfAs(13), 530)
 
 
 if __name__ == '__main__':
     unittest.main()
+
 

@@ -72,6 +72,17 @@ def checkout(skus):
     
     return total
 
+def totalValueOfAs(numAs):
+
+    fives = numAs // 5
+    remfives = numAs % 5
+    threes = remfives // 3
+    remainder = remfives % 3
+
+    bundles = numAs // 2
+    remainder = numBs % 2
+
+    return (bundles * 45) + (remainder * 30)
 
 def totalValueOfBs(numBs):
     bundles = numBs // 2
@@ -80,6 +91,7 @@ def totalValueOfBs(numBs):
 
 if __name__ == "__main__":
     main()
+
 
 
 
