@@ -58,9 +58,9 @@ def checkout(skus):
         threes = remfives // 3
         discountA = (fives * 50) + (threes * 20)
         total -= discountA
-    # if counter['E'] // 2 > 0:
-    #     numOfEs = counter['E'] // 2
-    #     counter['B'] += numOfEs
+    if counter['E'] // 2 > 0:
+        numOfFreeBs = counter['E'] // 2
+        counter['B'] += numOfEs
     if counter['B'] // 2 > 0:
         discountB = (counter['B'] // 2) * 15
         total -= discountB
@@ -69,9 +69,3 @@ def checkout(skus):
 
 if __name__ == "__main__":
     main()
-
-
-
-
-
-
