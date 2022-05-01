@@ -154,6 +154,11 @@ class TestSolution(unittest.TestCase):
         self.assertEqual(totalValueOfFs(2), 20)
         self.assertEqual(totalValueOfFs(6), 40)
     
+    def test_updateCounterDict(self):
+        dict1={'E':2, 'B':1}
+        dict2={'E':2}
+        self.assertEqual(updateCounterDict(dict1), dict2)
+    
 
 if __name__ == '__main__':
     unittest.main()

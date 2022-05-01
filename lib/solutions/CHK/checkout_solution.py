@@ -103,6 +103,9 @@ def totalValueOfFs(numFs):
     remainder = numFs % 3
     return (bundles * 20) + (remainder * 10)
 
+def updateCounterDict(counterDict):
+    pass
+
 if __name__ == "__main__":
     main()
 
