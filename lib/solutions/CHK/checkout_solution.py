@@ -16,7 +16,7 @@ def checkout(skus):
     #create array for prices
     #convert all strings tolower for consistency
     #assuming input is a string of letters, without spaces or commas
-    #if the counter dict reaches 3 items, take a discount off the total prices, and reset the counter for that letter
+    #if the counter dict reaches 3 items for a or b, take a discount off the total prices, and reset the counter for that letter
     #check it is a string
 
     total = 0
@@ -30,9 +30,18 @@ def checkout(skus):
 
     for letter in cleanedSkus:
         if letter in prices:
-            
+            total += prices[letter]
+        else:
+            return -1
+    
+    #offers
+    if counter['a'] // 3 > 0:
+        
+
+
 
 
 if __name__ == "__main__":
     main()
+
 
