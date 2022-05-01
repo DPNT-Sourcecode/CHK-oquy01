@@ -9,11 +9,11 @@ def hello(friend_name):
     if friend_name == "":
         return 'Hello, World!'
     else:
-        return 'Hello ' + friend_name
-    return 'Hello, World!'
+        return 'Hello, ' + friend_name + '!'
 
 if __name__ == "__main__":
     main()
 
-# print(hello('Ted'))
+print(hello('Ted'))
+
 
