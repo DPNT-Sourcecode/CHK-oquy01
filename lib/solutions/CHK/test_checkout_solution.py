@@ -159,10 +159,14 @@ class TestSolution(unittest.TestCase):
         dict2={'E':2, 'B':0}
         dict3={'F':6, 'B':1}
         dict4={'F':4, 'B':1}
+        dict5={'U':8, 'B':1}
+        dict6={'U':6, 'B':1}
         self.assertEqual(updateCounterDict(dict1), dict2)
         self.assertEqual(updateCounterDict(dict3), dict4)
+        self.assertEqual(updateCounterDict(dict5), dict6)
     
 
 if __name__ == '__main__':
     unittest.main()
+
 
