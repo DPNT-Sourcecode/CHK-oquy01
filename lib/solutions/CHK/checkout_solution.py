@@ -61,22 +61,9 @@ def checkout(skus):
 
     total += totalValueOfAs(counter['A'])
     numOfFreeBs = counter['E'] // 2
-    total += totalValueOfAs(counter['A'])
-    if counter['A'] // 3 > 0:
-        fives = counter['A'] // 5
-        remfives = counter['A'] % 5
-        threes = remfives // 3
-        discountA = (fives * 50) + (threes * 20)
-        total -= discountA
-    # if counter['E'] // 2 > 0:
-    #     numOfFreeBs = counter['E'] // 2
-    #     numOfBsToDiscount = min(counter['B'],numOfFreeBs)
-    #     discountE = numOfBsToDiscount * 
-    #     total -= 
-    
-    if counter['B'] // 2 > 0:
-        discountB = (counter['B'] // 2) * 15
-        total -= discountB
+    totalBs = max(counter['B'] - numOfFreeBs, 0)
+
+    total += totalValueOfBs(totalBs)
     
     return total
 
