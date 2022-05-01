@@ -20,16 +20,17 @@ def checkout(skus):
     #check it is a string
 
     total = 0
-    prices = {'a':50,
-    'b':30,
-    'c':20,
-    'd':15}
-
+    prices = {'A':50,
+    'B':30,
+    'C':20,
+    'D':15}
+    if skus == "":
+        return total
     if not skus.isalpha():
         return -1
 
     # cleanedSkus = skus.lower().strip()
-    
+
     counter = Counter(skus)
 
     for letter in skus:
@@ -39,17 +40,18 @@ def checkout(skus):
             return -1
     
     #offers
-    if counter['a'] // 3 > 0:
-        discount = (counter['a'] // 3) * 20
+    if counter['A'] // 3 > 0:
+        discount = (counter['A'] // 3) * 20
         total -= discount
-    if counter['b'] // 2 > 0:
-        discount = (counter['b'] // 2) * 15
+    if counter['B'] // 2 > 0:
+        discount = (counter['B'] // 2) * 15
         total -= discount
     
     return total
 
 if __name__ == "__main__":
     main()
+
 
 
 
