@@ -60,7 +60,9 @@ def checkout(skus):
         total -= discountA
     if counter['E'] // 2 > 0:
         numOfFreeBs = counter['E'] // 2
-        counter['B'] += numOfEs
+        numOfBsToDiscount = min(counter['B'],numOfFreeBs)
+        discountE = numOfBsToDiscount * 
+        total -= 
     if counter['B'] // 2 > 0:
         discountB = (counter['B'] // 2) * 15
         total -= discountB
@@ -69,3 +71,4 @@ def checkout(skus):
 
 if __name__ == "__main__":
     main()
+
