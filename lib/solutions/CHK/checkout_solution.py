@@ -79,12 +79,18 @@ def checkout(skus):
             total += totalValueOfAs(newCounter[key])
         elif key == 'B':
             total += totalValueOfBs(newCounter[key])
+        elif key == 'H':
+            #5H for 45, 10H for 80 
+            tens = newCounter[key] // 10
+            remTens = 
         if key == 'N':
             counterDict['M'] = max(counterDict['M'] - counterDict['N'] // 3,0)
         if key == 'R':
             counterDict['Q'] = max(counterDict['Q'] - counterDict['R'] // 3,0)
         if key == 'U':
             counterDict['U'] -= counterDict['U'] // 4
+        else:
+            total += prices[key] + newCounter[key]
     return counterDict
 
     for letter in skus:
@@ -143,12 +149,3 @@ def updateCounterDict(counterDict):
 
 if __name__ == "__main__":
     main()
-
-
-
-
-
-
-
-
-
