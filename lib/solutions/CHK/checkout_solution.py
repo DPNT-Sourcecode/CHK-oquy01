@@ -53,9 +53,14 @@ def checkout(skus):
     #offers
     if counter['A'] // 3 > 0:
         fives = counter['A'] // 5
-        remfives = 
-        discount = (counter['A'] // 3) * 20
+        remfives = counter['A'] % 5
+        threes = remfives // 3
+        discount = 
+        (counter['A'] // 3) * 20
         total -= discount
+    if counter['E'] // 2 > 0:
+        discount2 = (counter['B'] // 2) * 15
+        total -= discount2
     if counter['B'] // 2 > 0:
         discount2 = (counter['B'] // 2) * 15
         total -= discount2
@@ -64,6 +69,7 @@ def checkout(skus):
 
 if __name__ == "__main__":
     main()
+
 
 
 
