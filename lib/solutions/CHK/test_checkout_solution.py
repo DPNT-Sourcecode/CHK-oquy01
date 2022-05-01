@@ -32,7 +32,7 @@ class TestSolution(unittest.TestCase):
         sku3 = ''''''
         sku4 = '''AABABD'''
         sku5 = '''ZMJSD'''
-        sku6 = '''AABABDAAAAAAC'''
+        sku6 = '''AAAAAA'''
         sku7 = '''AA'''
         sku8 = '''a'''
         sku9 = '''BBBB'''
@@ -41,7 +41,8 @@ class TestSolution(unittest.TestCase):
         self.assertEqual(checkout(sku3), 0)
         self.assertEqual(checkout(sku4), 190)
         self.assertEqual(checkout(sku5), -1)
-        self.assertEqual(checkout(sku6), 470)
+        self.assertEqual(checkout(sku6), 250)
+        
         self.assertEqual(checkout(sku7), 100)
         self.assertEqual(checkout(sku8), -1)
         self.assertEqual(checkout(sku9), 90)
@@ -49,3 +50,4 @@ class TestSolution(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+

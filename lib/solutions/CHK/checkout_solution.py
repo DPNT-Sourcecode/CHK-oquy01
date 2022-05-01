@@ -24,13 +24,17 @@ def checkout(skus):
     #if the counter dict reaches 3 items for a or b, take a discount off the total prices, and reset the counter for that letter
     #check it is a string
 
+    #Round 2
+    #add new item E
+    #check that whatever offer is given is the lowest
+
     total = 0
     prices = {'A':50,
     'B':30,
     'C':20,
     'D':15,
     'E':40}
-    
+
     if skus == "":
         return total
     if not skus.isalpha():
@@ -58,4 +62,5 @@ def checkout(skus):
 
 if __name__ == "__main__":
     main()
+
 
