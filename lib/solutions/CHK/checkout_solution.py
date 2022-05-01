@@ -128,13 +128,13 @@ def totalValueOfFs(numFs):
 
 def updateCounterDict(counterDict):
     for key,value in counterDict.items():
-        if key == 'E':
+        if key == 'E' and 'B' in counterDict:
             counterDict['B'] = max(counterDict['B'] - counterDict['E'] // 2,0)
         if key == 'F':
             counterDict['F'] -= counterDict['F'] // 3
-        if key == 'N':
+        if key == 'N' and 'M' in counterDict:
             counterDict['M'] = max(counterDict['M'] - counterDict['N'] // 3,0)
-        if key == 'R':
+        if key == 'R' and 'Q' in counterDict:
             counterDict['Q'] = max(counterDict['Q'] - counterDict['R'] // 3,0)
         if key == 'U':
             counterDict['U'] -= counterDict['U'] // 4
@@ -143,6 +143,7 @@ def updateCounterDict(counterDict):
 
 if __name__ == "__main__":
     main()
+
 
 
 
