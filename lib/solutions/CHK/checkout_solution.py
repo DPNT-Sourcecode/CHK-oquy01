@@ -102,9 +102,9 @@ def checkout(skus):
     #Special offers
 
     total += totalValueOfAs(counter['A'])
-    numOfFreeBs = counter['E'] // 2
-    totalBs = max(counter['B'] - numOfFreeBs, 0)
-    total += totalValueOfBs(totalBs)
+    # # numOfFreeBs = counter['E'] // 2
+    # # totalBs = max(counter['B'] - numOfFreeBs, 0)
+    total += totalValueOfBs(newCounter['B'])
     total += totalValueOfFs(counter['F'])
     
     return total
@@ -143,6 +143,7 @@ def updateCounterDict(counterDict):
 
 if __name__ == "__main__":
     main()
+
 
 
 
