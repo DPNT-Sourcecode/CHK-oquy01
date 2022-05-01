@@ -40,6 +40,8 @@ def checkout(skus):
         return total
     if not skus.isalpha():
         return -1
+    
+    ModifiedSkus = 
 
     # cleanedSkus = skus.lower().strip()
 
@@ -63,12 +65,17 @@ def checkout(skus):
         numOfBsToDiscount = min(counter['B'],numOfFreeBs)
         discountE = numOfBsToDiscount * 
         total -= 
+    
     if counter['B'] // 2 > 0:
         discountB = (counter['B'] // 2) * 15
         total -= discountB
     
     return total
 
+
+def totalValueOfBs()
+
 if __name__ == "__main__":
     main()
+
 
