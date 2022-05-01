@@ -52,7 +52,15 @@ class TestSolution(unittest.TestCase):
     def test_totalValueOfBs(self):
         self.assertEqual(totalValueOfBs(2), 45)
         self.assertEqual(totalValueOfBs(3), 75)
+        self.assertEqual(totalValueOfBs(4), 90)
+
+    def test_totalValueOfAs(self):
+        self.assertEqual(totalValueOfAs(2), 100)
+        self.assertEqual(totalValueOfAs(3), 130)
+        self.assertEqual(totalValueOfAs(5), 200)
+        self.assertEqual(totalValueOfAs(13), 200)
 
 
 if __name__ == '__main__':
     unittest.main()
+

@@ -41,7 +41,7 @@ def checkout(skus):
     if not skus.isalpha():
         return -1
     
-    ModifiedSkus = 
+    # ModifiedSkus = 0
 
     # cleanedSkus = skus.lower().strip()
 
@@ -60,11 +60,11 @@ def checkout(skus):
         threes = remfives // 3
         discountA = (fives * 50) + (threes * 20)
         total -= discountA
-    if counter['E'] // 2 > 0:
-        numOfFreeBs = counter['E'] // 2
-        numOfBsToDiscount = min(counter['B'],numOfFreeBs)
-        discountE = numOfBsToDiscount * 
-        total -= 
+    # if counter['E'] // 2 > 0:
+    #     numOfFreeBs = counter['E'] // 2
+    #     numOfBsToDiscount = min(counter['B'],numOfFreeBs)
+    #     discountE = numOfBsToDiscount * 
+    #     total -= 
     
     if counter['B'] // 2 > 0:
         discountB = (counter['B'] // 2) * 15
@@ -74,10 +74,13 @@ def checkout(skus):
 
 
 def totalValueOfBs(numBs):
-    numBs
+    bundles = numBs // 2
+    remainder = numBs % 2
+    return (bundles * 45) + (remainder * 30)
 
 if __name__ == "__main__":
     main()
+
 
 
 
