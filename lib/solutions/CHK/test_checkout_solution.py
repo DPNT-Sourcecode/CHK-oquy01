@@ -156,7 +156,7 @@ class TestSolution(unittest.TestCase):
     
     def test_updateCounterDict(self):
         dict1={'E':2, 'B':1}
-        dict2={'E':2}
+        dict2={'E':2, 'B':0}
         self.assertEqual(updateCounterDict(dict1), dict2)
     
 
