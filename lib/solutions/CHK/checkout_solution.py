@@ -17,6 +17,7 @@ def checkout(skus):
     #convert all strings tolower for consistency
     #assuming input is a string of letters, without spaces or commas
     #if the counter dict reaches 3 items, take a discount off the total prices, and reset the counter for that letter
+    #check it is a string
 
     total = 0
     prices = {'a':50,
@@ -27,8 +28,11 @@ def checkout(skus):
     cleanedSkus = skus.lower().trim()
     counter = Counter(skus)
 
-    
+    for letter in cleanedSkus:
+        if letter in prices:
+            
 
 
 if __name__ == "__main__":
     main()
+
