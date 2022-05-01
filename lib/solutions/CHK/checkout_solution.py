@@ -36,12 +36,18 @@ def checkout(skus):
     
     #offers
     if counter['a'] // 3 > 0:
-        
-
+        discount = (counter['a'] // 3) * 20
+        total -= discount
+    if counter['b'] // 2 > 0:
+        discount = (counter['b'] // 2) * 15
+        total -= discount
+    
+    return total
 
 
 
 if __name__ == "__main__":
     main()
+
 
 
