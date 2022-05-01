@@ -115,14 +115,13 @@ def totalValueOfFs(numFs):
 def updateCounterDict(counterDict):
     for key,value in counterDict.items():
         if key == 'E':
+            counterDict['B'] -= counterDict['E'] // 2
         if key == 'F':
         if key == 'K':
         if key == 'N':
-
         if key == 'R':
         if key == 'U':
 
-    pass
 
 '''+------+-------+----------------+
 round4
@@ -161,4 +160,5 @@ round4
 
 if __name__ == "__main__":
     main()
+
 
