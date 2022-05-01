@@ -74,6 +74,9 @@ class TestSolution(unittest.TestCase):
         sku12 ='''EEEB'''
         sku13 = '''EEEEBB'''
         sku14 = '''EEEEEEEEBBBB'''
+        sku15 = '''FFF'''
+        sku16 = '''EEEBBFFFFFF'''
+        sku17 = '''ABCDEF'''
 
         self.assertEqual(checkout(sku1), 115)
         self.assertEqual(checkout(sku2), -1)
@@ -90,6 +93,10 @@ class TestSolution(unittest.TestCase):
         self.assertEqual(checkout(sku12), 120)
         self.assertEqual(checkout(sku13), 160)
         self.assertEqual(checkout(sku14), 320)
+
+        self.assertEqual(checkout(sku15), 20)
+        self.assertEqual(checkout(sku16), 190)
+        self.assertEqual(checkout(sku17), 165)
     
     def test_totalValueOfBs(self):
         self.assertEqual(totalValueOfBs(2), 45)
@@ -110,4 +117,5 @@ class TestSolution(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
 

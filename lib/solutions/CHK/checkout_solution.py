@@ -66,6 +66,8 @@ def checkout(skus):
             continue
         if letter == 'B':
             continue
+        if letter == 'F':
+            continue
         if letter in prices:
             total += prices[letter]
         else:
@@ -76,8 +78,8 @@ def checkout(skus):
     total += totalValueOfAs(counter['A'])
     numOfFreeBs = counter['E'] // 2
     totalBs = max(counter['B'] - numOfFreeBs, 0)
-
     total += totalValueOfBs(totalBs)
+    total += totalValueOfFs(counter['F'])
     
     return total
 
@@ -100,5 +102,6 @@ def totalValueOfFs(numFs):
 
 if __name__ == "__main__":
     main()
+
 
 
