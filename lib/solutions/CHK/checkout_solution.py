@@ -123,20 +123,22 @@ round4
             remainder = remTens % 5
             return (tens * 80) + (fives * 45) + (remainder * prices[key])
         elif key == 'K':
-            #5H for 45, 10H for 80 
-            tens = newCounter[key] // 10
-            remTens = newCounter[key] % 10
-            fives = remTens // 5
-            remainder = remTens % 5
+            #2K for 150
+            bundles =  newCounter[key] // 2
+            remainder = newCounter[key] % 2
+            return (bundles * 150) + (remainder * prices[key])
+        elif key == 'P':
+            #5P for 200 
+            bundles =  newCounter[key] // 5
+            remainder = newCounter[key] % 5
+            return (bundles * 200) + (remainder * prices[key])
+        elif key == 'Q':
+            #5P for 200 
+            bundles =  newCounter[key] // 5
+            remainder = newCounter[key] % 5
+            return (bundles * 200) + (remainder * prices[key])
 
-            return (tens * 80) + (fives * 45) + (remainder * prices[key])
-
-        if key == 'N':
-            counterDict['M'] = max(counterDict['M'] - counterDict['N'] // 3,0)
-        if key == 'R':
-            counterDict['Q'] = max(counterDict['Q'] - counterDict['R'] // 3,0)
-        if key == 'U':
-            counterDict['U'] -= counterDict['U'] // 4
+        
         else:
             total += prices[key] + newCounter[key]
     return counterDict
@@ -197,4 +199,5 @@ def updateCounterDict(counterDict):
 
 if __name__ == "__main__":
     main()
+
 
