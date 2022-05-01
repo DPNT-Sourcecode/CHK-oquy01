@@ -27,6 +27,7 @@ def checkout(skus):
     #Round 2
     #add new item E
     #check that whatever offer is given is the lowest
+    #getting a B for free when you buy 2 Es would not affect the total I don't think, because that would be strange
 
     total = 0
     prices = {'A':50,
@@ -57,18 +58,18 @@ def checkout(skus):
         threes = remfives // 3
         discountA = (fives * 50) + (threes * 20)
         total -= discountA
-    if counter['E'] // 2 > 0:
-        numOfEs = counter['E'] // 2
-        counter['B'] += numOfEs
-        total -= discount2
+    # if counter['E'] // 2 > 0:
+    #     numOfEs = counter['E'] // 2
+    #     counter['B'] += numOfEs
     if counter['B'] // 2 > 0:
         discountB = (counter['B'] // 2) * 15
-        total -= discount2
+        total -= discountB
     
     return total
 
 if __name__ == "__main__":
     main()
+
 
 
 
