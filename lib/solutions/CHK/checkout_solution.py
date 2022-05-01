@@ -74,7 +74,18 @@ def checkout(skus):
     counter = Counter(skus)
     newCounter = updateCounterDict(counter)
 
-    
+    # for key,value in newCounter.items():
+    #     if key == 'E':
+    #         counterDict['B'] = max(counterDict['B'] - counterDict['E'] // 2,0)
+    #     if key == 'F':
+    #         counterDict['F'] -= counterDict['F'] // 3
+    #     if key == 'N':
+    #         counterDict['M'] = max(counterDict['M'] - counterDict['N'] // 3,0)
+    #     if key == 'R':
+    #         counterDict['Q'] = max(counterDict['Q'] - counterDict['R'] // 3,0)
+    #     if key == 'U':
+    #         counterDict['U'] -= counterDict['U'] // 4
+    # return counterDict
 
     for letter in skus:
         if letter == 'A':
@@ -132,6 +143,7 @@ def updateCounterDict(counterDict):
 
 if __name__ == "__main__":
     main()
+
 
 
 
