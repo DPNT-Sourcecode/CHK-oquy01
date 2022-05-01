@@ -6,7 +6,10 @@ def main():
     hello('John')
 
 def hello(friend_name):
-    return 'Hello ' + 
+    if friend_name == "":
+        return 'Hello World'
+    else:
+        return 'Hello ' + friend_name
 
 if __name__ == "__main__":
     main()
