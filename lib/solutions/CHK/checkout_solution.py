@@ -212,9 +212,13 @@ def updateCounterDict(counterDict):
             counterDict['U'] -= counterDict['U'] // 4
     return counterDict
 
+def groupDiscount(nums):
+    noOfItems = len(nums)
+    nums.sort()
 
 if __name__ == "__main__":
     main()
+
 
 
 
