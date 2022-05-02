@@ -99,6 +99,58 @@ class TestSolution(unittest.TestCase):
     #     self.assertEqual(checkout(sku17), 165)
     
     #round 4
+    # def test_checkout(self):
+    #     sku1 = '''ABCD'''
+    #     sku2 = '''ABCD2'''
+    #     sku3 = ''''''
+    #     sku4 = '''AABABD'''
+    #     sku5 = '''ZMJSD'''
+    #     sku6 = '''AAAAAA'''
+    #     sku7 = '''AAAEE'''
+    #     sku8 = '''a'''
+    #     sku9 = '''AAAAAAAAAAAAA'''
+    #     sku10 = '''EEEBB'''
+    #     sku11 ='''EEB'''
+    #     sku12 ='''EEEB'''
+    #     sku13 = '''EEEEBB'''
+    #     sku14 = '''EEEEEEEEBBBB'''
+    #     sku15 = '''FFF'''
+    #     sku16 = '''EEEBBFFFFFF'''
+    #     sku17 = '''ABCDEF'''
+    #     sku18 = '''UUUUNNNM'''
+    #     sku19 = '''VVQ'''
+    #     sku20 = '''KKKKL'''
+    #     sku21 = '''O'''
+    #     sku22 = '''ABCDEFGHIJKLMNOPQRSTUVWXYZ'''
+    #     sku23 = '''ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ'''
+
+    #     self.assertEqual(checkout(sku1), 115)
+    #     self.assertEqual(checkout(sku2), -1)
+    #     self.assertEqual(checkout(sku3), 0)
+    #     self.assertEqual(checkout(sku4), 190)
+    #     self.assertEqual(checkout(sku5), 170)
+    #     self.assertEqual(checkout(sku6), 250)
+    #     self.assertEqual(checkout(sku7), 210)
+
+    #     self.assertEqual(checkout(sku8), -1)
+    #     self.assertEqual(checkout(sku9), 530)
+    #     self.assertEqual(checkout(sku10), 150)
+    #     self.assertEqual(checkout(sku11), 80)
+    #     self.assertEqual(checkout(sku12), 120)
+    #     self.assertEqual(checkout(sku13), 160)
+    #     self.assertEqual(checkout(sku14), 320)
+
+    #     self.assertEqual(checkout(sku15), 20)
+    #     self.assertEqual(checkout(sku16), 190)
+    #     self.assertEqual(checkout(sku17), 165)
+    #     self.assertEqual(checkout(sku18), 240)
+    #     self.assertEqual(checkout(sku19), 120)
+    #     self.assertEqual(checkout(sku20), 390)
+    #     self.assertEqual(checkout(sku21), 10)
+    #     self.assertEqual(checkout(sku22), 965)
+    #     self.assertEqual(checkout(sku23), 1880)
+    
+    #round 5
     def test_checkout(self):
         sku1 = '''ABCD'''
         sku2 = '''ABCD2'''
@@ -183,3 +235,4 @@ class TestSolution(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
