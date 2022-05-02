@@ -91,7 +91,8 @@ def checkout(skus):
     # update the counter dict first, then work off of the counter dict
 
     #Round 5
-    # create new method which takes array of all S,Ts etc.
+    # create new method which takes array of all S,Ts etc. Use this to calculate total value of all of them
+    # run this method at the end, passing in the array
 
     total = 0
     prices = {'A':50,
@@ -120,6 +121,7 @@ def checkout(skus):
     'X':90,
     'Y':10,
     'Z':50}
+    groupArray = []
 
     if skus == "":
         return total

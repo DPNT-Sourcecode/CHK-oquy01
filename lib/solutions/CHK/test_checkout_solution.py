@@ -231,7 +231,10 @@ class TestSolution(unittest.TestCase):
         self.assertEqual(updateCounterDict(dict3), dict4)
         self.assertEqual(updateCounterDict(dict5), dict6)
         self.assertEqual(updateCounterDict(dict7), dict8)
-    
+
+    def test_groupDiscount(self):
+        array1 = ['S','T','X','Y','Z']
+        self.assertEqual(groupDiscount(array1), 82)
 
 if __name__ == '__main__':
     unittest.main()
