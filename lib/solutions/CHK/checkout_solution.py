@@ -90,6 +90,9 @@ def checkout(skus):
     #Round 4
     # update the counter dict first, then work off of the counter dict
 
+    #Round 5
+    # create new method which takes array of all S,Ts etc.
+
     total = 0
     prices = {'A':50,
     'B':30,
@@ -210,5 +213,6 @@ def updateCounterDict(counterDict):
 
 if __name__ == "__main__":
     main()
+
 
 
