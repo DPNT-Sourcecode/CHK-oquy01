@@ -167,6 +167,7 @@ def checkout(skus):
             twos = remThrees // 2
             remainder = remThrees % 2
             total += (threes * 130) + (twos * 90) + (remainder * prices[key])
+        elif key == 'S'
         elif key in prices:
             total += prices[key] * newCounter[key]
         else:
@@ -220,16 +221,10 @@ def groupDiscount(nums):
     remainder = noOfItems % 2
     subtotal = numOfThrees * 45
 
-    for i in range(0, remainder):
+    for i in range(0, remainder+1):
         subtotal += nums[i]
     
     return subtotal
     
 if __name__ == "__main__":
     main()
-
-
-
-
-
-
