@@ -233,9 +233,10 @@ class TestSolution(unittest.TestCase):
         self.assertEqual(updateCounterDict(dict7), dict8)
 
     def test_groupDiscount(self):
-        array1 = ['S','T','X','Y','Z']
+        array1 = [17,20,20,20,21]
         self.assertEqual(groupDiscount(array1), 82)
 
 if __name__ == '__main__':
     unittest.main()
+
 
