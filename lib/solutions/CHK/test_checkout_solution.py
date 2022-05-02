@@ -117,12 +117,13 @@ class TestSolution(unittest.TestCase):
         sku15 = '''FFF'''
         sku16 = '''EEEBBFFFFFF'''
         sku17 = '''ABCDEF'''
+        sku18 = '''UUUUNNNM'''
 
         self.assertEqual(checkout(sku1), 115)
         self.assertEqual(checkout(sku2), -1)
         self.assertEqual(checkout(sku3), 0)
         self.assertEqual(checkout(sku4), 190)
-        self.assertEqual(checkout(sku5), -1)
+        self.assertEqual(checkout(sku5), 170)
         self.assertEqual(checkout(sku6), 250)
         self.assertEqual(checkout(sku7), 210)
 

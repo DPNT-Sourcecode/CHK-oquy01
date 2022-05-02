@@ -129,8 +129,10 @@ def checkout(skus):
             twos = remThrees // 2
             remainder = remThrees % 2
             total += (threes * 130) + (twos * 90) + (remainder * prices[key])
-        else:
+        elif key in prices:
             total += prices[key] * newCounter[key]
+        else:
+            return -1
 
     #Special offers
     # total += totalValueOfAs(counter['A'])
@@ -175,6 +177,7 @@ def updateCounterDict(counterDict):
 
 if __name__ == "__main__":
     main()
+
 
 
 
