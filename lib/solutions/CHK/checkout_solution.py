@@ -183,9 +183,9 @@ def checkout(skus):
     # totalBs = max(counter['B'] - numOfFreeBs, 0)
     # total += totalValueOfBs(newCounter['B'])
     # total += totalValueOfFs(counter['F'])
-    print('Input was: ' + str(skus))
-    print(groupArray)
-    print('Groupdiscount was: ' + str(groupDiscount(groupArray)))
+    # print('Input was: ' + str(skus))
+    # print(groupArray)
+    # print('Groupdiscount was: ' + str(groupDiscount(groupArray)))
     total += groupDiscount(groupArray)
     
     return total
@@ -230,7 +230,6 @@ def groupDiscount(nums):
     numOfThrees = noOfItems // 3
     remainder = noOfItems % 3
     subtotal = numOfThrees * 45
-    print('remainder: ' + str(remainder))
 
     for i in range(0, remainder):
         subtotal += nums[i]
@@ -239,4 +238,5 @@ def groupDiscount(nums):
     
 if __name__ == "__main__":
     main()
+
 
