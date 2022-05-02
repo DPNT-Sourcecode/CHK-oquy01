@@ -168,7 +168,7 @@ def checkout(skus):
             twos = remThrees // 2
             remainder = remThrees % 2
             total += (threes * 130) + (twos * 90) + (remainder * prices[key])
-        elif key == 'S' or 'T' or 'X' or 'Y' or 'Z':
+        elif key == 'S' or key == 'T' or key == 'X' or key == 'Y' or key == 'Z':
             groupArray.append(prices[key])
         elif key in prices:
             total += prices[key] * newCounter[key]
@@ -182,6 +182,7 @@ def checkout(skus):
     # totalBs = max(counter['B'] - numOfFreeBs, 0)
     # total += totalValueOfBs(newCounter['B'])
     # total += totalValueOfFs(counter['F'])
+    print('Input was: ' + str(skus))
     print(groupArray)
     total += groupDiscount(groupArray)
     
@@ -235,6 +236,7 @@ def groupDiscount(nums):
     
 if __name__ == "__main__":
     main()
+
 
 
 
