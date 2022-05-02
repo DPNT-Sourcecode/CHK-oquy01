@@ -72,7 +72,7 @@ def checkout(skus):
     'L':90,
     'M':15,
     'N':40,
-    '0':10,
+    'O':10,
     'P':50,
     'Q':30,
     'R':50,
@@ -177,3 +177,4 @@ def updateCounterDict(counterDict):
 
 if __name__ == "__main__":
     main()
+
