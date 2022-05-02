@@ -215,9 +215,15 @@ def updateCounterDict(counterDict):
 def groupDiscount(nums):
     noOfItems = len(nums)
     nums.sort()
+    subtotal = 0
+    numOfThrees = noOfItems // 2
+    remainder = numOfThrees 
+
+    for i in range(0, )
 
 if __name__ == "__main__":
     main()
+
 
 
 
