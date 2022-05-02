@@ -240,7 +240,9 @@ class TestSolution(unittest.TestCase):
 
     def test_groupDiscount(self):
         array1 = [17,20,20,20,21]
+        array2 = []
         self.assertEqual(groupDiscount(array1), 82)
+        self.assertEqual(groupDiscount(array2), 0)
 
 if __name__ == '__main__':
     unittest.main()

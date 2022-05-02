@@ -229,7 +229,7 @@ def groupDiscount(nums):
 
     for i in range(0, remainder+1):
         subtotal += nums[i]
-    
+        
     return subtotal
     
 if __name__ == "__main__":
