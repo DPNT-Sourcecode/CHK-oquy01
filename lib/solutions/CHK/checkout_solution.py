@@ -177,10 +177,3 @@ def updateCounterDict(counterDict):
 
 if __name__ == "__main__":
     main()
-
-
-
-
-
-
-
