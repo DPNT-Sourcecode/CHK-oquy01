@@ -184,6 +184,7 @@ def checkout(skus):
     # total += totalValueOfFs(counter['F'])
     print('Input was: ' + str(skus))
     print(groupArray)
+    print('Groupdiscount was: ' + str(groupDiscount(groupArray)))
     total += groupDiscount(groupArray)
     
     return total
@@ -236,6 +237,7 @@ def groupDiscount(nums):
     
 if __name__ == "__main__":
     main()
+
 
 
 
