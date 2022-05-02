@@ -169,7 +169,8 @@ def checkout(skus):
             remainder = remThrees % 2
             total += (threes * 130) + (twos * 90) + (remainder * prices[key])
         elif key == 'S' or key == 'T' or key == 'X' or key == 'Y' or key == 'Z':
-            groupArray.append(prices[key])
+            for i in range (0, newCounter[key]):
+                groupArray.append(prices[key])
         elif key in prices:
             total += prices[key] * newCounter[key]
         else:
@@ -238,3 +239,4 @@ def groupDiscount(nums):
     
 if __name__ == "__main__":
     main()
+
