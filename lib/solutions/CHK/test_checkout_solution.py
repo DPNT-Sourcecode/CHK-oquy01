@@ -206,7 +206,7 @@ class TestSolution(unittest.TestCase):
         self.assertEqual(checkout(sku23), 1880)
         self.assertEqual(checkout(sku24), 82)
         self.assertEqual(checkout(sku25), 152)
-        self.assertEqual(checkout(sku26), 1880)
+        self.assertEqual(checkout(sku26), 176)
     
     def test_totalValueOfBs(self):
         self.assertEqual(totalValueOfBs(2), 45)
@@ -244,3 +244,4 @@ class TestSolution(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+

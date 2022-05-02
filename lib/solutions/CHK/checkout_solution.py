@@ -105,7 +105,7 @@ def checkout(skus):
     'H':10,
     'I':35,
     'J':60,
-    'K':80,
+    'K':70,
     'L':90,
     'M':15,
     'N':40,
@@ -113,14 +113,15 @@ def checkout(skus):
     'P':50,
     'Q':30,
     'R':50,
-    'S':30,
+    'S':20,
     'T':20,
     'U':40,
     'V':50,
     'W':20,
-    'X':90,
-    'Y':10,
-    'Z':50}
+    'X':17,
+    'Y':20,
+    'Z':21}
+
     groupArray = []
 
     if skus == "":
@@ -146,10 +147,10 @@ def checkout(skus):
             remainder = remTens % 5
             total += (tens * 80) + (fives * 45) + (remainder * prices[key])
         elif key == 'K':
-            #2K for 150
+            #2K for 120
             bundles =  newCounter[key] // 2
             remainder = newCounter[key] % 2
-            total += (bundles * 150) + (remainder * prices[key])
+            total += (bundles * 120) + (remainder * prices[key])
         elif key == 'P':
             #5P for 200 
             bundles =  newCounter[key] // 5
@@ -233,4 +234,5 @@ def groupDiscount(nums):
     
 if __name__ == "__main__":
     main()
+
 
