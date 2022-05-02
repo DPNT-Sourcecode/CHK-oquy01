@@ -227,8 +227,9 @@ def groupDiscount(nums):
     nums.sort()
     subtotal = 0
     numOfThrees = noOfItems // 3
-    remainder = noOfItems % 2
+    remainder = noOfItems % 3
     subtotal = numOfThrees * 45
+    print('remainder: ' + str(remainder))
 
     for i in range(0, remainder+1):
         subtotal += nums[i]
@@ -237,6 +238,7 @@ def groupDiscount(nums):
     
 if __name__ == "__main__":
     main()
+
 
 
 
