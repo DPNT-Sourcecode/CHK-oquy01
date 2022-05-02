@@ -231,17 +231,10 @@ def groupDiscount(nums):
     subtotal = numOfThrees * 45
     print('remainder: ' + str(remainder))
 
-    for i in range(0, remainder-1):
+    for i in range(0, remainder):
         subtotal += nums[i]
 
     return subtotal
     
 if __name__ == "__main__":
     main()
-
-
-
-
-
-
-
